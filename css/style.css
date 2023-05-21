@@ -116,7 +116,7 @@ textarea {
   height: 5px;
   width: 3rem;
   background-color: #2a2a72;
-background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -181,8 +181,8 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
   font-size: 1.6rem;
 }
 .btn--theme {
-  background: background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
+  background: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   color: #fff;
 }
 .btn--theme-inv {
@@ -221,8 +221,8 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
 
 .home-hero {
   color: #fff;
-  background:background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -408,7 +408,7 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
 .project-cs-hero {
   color: #fff;
   background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -814,6 +814,20 @@ span {
   color: #777;
 }
 
+.skills__skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #777;
+}
+
 .header__logo-img-cont1 {
   margin: auto;
 }
@@ -828,7 +842,6 @@ span {
   flex: 1;
 }
 
-
 #express {
   width: 6rem;
   height: 3rem;
@@ -837,17 +850,20 @@ span {
 #mongo {
   width: 4rem;
   height: 6rem;
-
 }
 
 #cpp {
   width: 5rem;
   height: 6rem;
-
 }
 
 #react {
   width: 5rem;
   height: 5rem;
+}
 
+@media only screen and (max-width: 700px) {
+  .skills__skills {
+    padding: 1.5rem 0rem 1.5rem 1rem;
+  }
 }
